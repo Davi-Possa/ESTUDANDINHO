@@ -15,6 +15,7 @@ else:
 	print("Vai a MERDA!")
 ```
 
+|=-=-=-=-=-=-=-=-=-=-=-=|
 
 ### **FOR – WHILE**: 
 Estrutura de repetição, usada para quando é necessário repetir a execução de uma instrução, enquanto certa condição é atendida.
@@ -38,6 +39,7 @@ for AEEEH in comida:
 print("Acabou a comida")
 ```
 
+|=-=-=-=-=-=-=-=-=-=-=-=|
 
 ### **RANGE**: 
 Função, usada para retornar uma série numérica, quando o intervalo for enviado como argumento, o retornado será um objeto iterável tipo range, tendo seus elementos gerados sob demanda. 
@@ -52,6 +54,7 @@ for tabela in range(i):
 	print(numero, "x", tabela, "=", multi)
 ```
 
+|=-=-=-=-=-=-=-=-=-=-=-=|
 
 ### **LEN**: 
 Função interna, usada para retornar o cumprimento de um determinado objeto, podendo contar o número de itens presentes em uma lista ou tupla.
@@ -63,6 +66,7 @@ comida = ['Xuxu', 'Pizza', 'Risoto', 'Churras', 'Bacalhau']
 print(comida, len(comida), "itens")
 ```
 
+|=-=-=-=-=-=-=-=-=-=-=-=|
 
 #### **BREAK - CONTINUE**:
 Duas ferramentas da estrutura de repetição, 
@@ -95,6 +99,7 @@ for x in range(n):
 		continue
 ```
 
+|=-=-=-=-=-=-=-=-=-=-=-=|
 
 ### **FUNÇÕES**:
 Blocos de código, geralmente utilizadas para realizar determinada tarefa, repetidas vezes, com fim a evitar a repetição de um certo bloco de código.
@@ -122,12 +127,13 @@ else:
 	print("A área desse retangulo é:", area)
 ```
 
+|=-=-=-=-=-=-=-=-=-=-=-=|
 
 ### **LISTA - TUPLAS - CONJUNTOS**: 
 Estrutura de armazenamento de dados.
 
 #### LISTA:
-Representada por [], a lista é mutável, ordenada, permite elementos duplicados, armazena os elementos em uma única linha ou várias linhas e coluna, pode ser criada usando a função *nome_lista = ['item', 'outro item']*.
+Representada por [], a lista é mutável, ordenada, permite elementos duplicados, armazena os elementos em uma única linha ou várias linhas e coluna, pode ser criada usando a função `nome_lista = ['item', 'outro item']`.
 
 ```python 
 comida = ['Feijão', 'Arroz', 'Xuxu', 'Risoto']
@@ -148,16 +154,18 @@ list.**sort**() - Ordena os itens de uma lista de acordo com a informação pass
 list.**reverse**() - Inverte a ordem da lista;
 list.**copy**() - Faz a cópia rasa da lista.
 
+
 #### TUPLA:
-Representada por (), a tupla é imutável, ordenada, permite elementos duplicados, armazena os elementos em uma única linha ou várias linhas e coluna, pode ser criada usando a função *nome_tupla = ('item', 'outro item')*.
+Representada por (), a tupla é imutável, ordenada, permite elementos duplicados, armazena os elementos em uma única linha ou várias linhas e coluna, pode ser criada usando a função `nome_tupla = ('item', 'outro item')`.
 
 ```python 
 tupla = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 print(tupla)
 ```
 
+
 #### CONJUNTO:
-Representado por {}, o conjunto é mutavel, não ordenado, não permite elementos duplicados, armazena os elementos em uma única linha, pode ser criado usando a função *nome_conjunto = {'item', 'outro item'}*.
+Representado por {}, o conjunto é mutavel, não ordenado, não permite elementos duplicados, armazena os elementos em uma única linha, pode ser criado usando a função `nome_conjunto = {'item', 'outro item'}`.
 
 ```python
 conjunto = {'Arroz', 'Feijão', 'Xuxu'}
