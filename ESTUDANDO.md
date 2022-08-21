@@ -1,4 +1,4 @@
-*IF – ELSE – ELIF*: 
+#### **IF – ELSE – ELIF**: 
 Estrutura de condição, usada para que um determinado bloco de códigos, seja apenas executado se tal condição for verdadeira, falsa, ou algo determinado a ela.
 
 Exemplo: 
@@ -15,7 +15,8 @@ else:
 	print("Vai a MERDA!")
 ```
 
-*FOR – WHILE*: 
+
+#### **FOR – WHILE**: 
 Estrutura de repetição, usada para quando é necessário repetir a execução de uma instrução, enquanto certa condição é atendida.
 
 Exemplo: 
@@ -37,7 +38,8 @@ for AEEEH in comida:
 print("Acabou a comida")
 ```
 
-*RANGE*: 
+
+#### **RANGE**: 
 Função, usada para retornar uma série numérica, quando o intervalo for enviado como argumento, o retornado será um objeto iterável tipo range, tendo seus elementos gerados sob demanda. 
 
 Exemplo: 
@@ -50,7 +52,8 @@ for tabela in range(i):
 	print(numero, "x", tabela, "=", multi)
 ```
 
-*LEN*: 
+
+#### **LEN**: 
 Função interna, usada para retornar o cumprimento de um determinado objeto, podendo contar o número de itens presentes em uma lista ou tupla.
 
 Exemplo: 
@@ -60,10 +63,11 @@ comida = ['Xuxu', 'Pizza', 'Risoto', 'Churras', 'Bacalhau']
 print(comida, len(comida), "itens")
 ```
 
-*BREAK - CONTINUE*:
+
+#### **BREAK - CONTINUE**:
 Duas ferramentas da estrutura de repetição, 
 
-BREAK: Interrompe o loop e encerra ele.
+##### **BREAK**: Interrompe o loop e encerra ele.
 
 Exemplo:
 ```python
@@ -77,7 +81,7 @@ for x in range(n):
 		break
 ```
 
-CONTINUE: Interrompe o loop e continua ou vai para a próxima iteração.
+##### **CONTINUE**: Interrompe o loop e continua ou vai para a próxima iteração.
 
 Exemplo:
 ```python
@@ -91,7 +95,8 @@ for x in range(n):
 		continue
 ```
 
-*FUNÇÕES*:
+
+#### **FUNÇÕES**:
 Blocos de código, geralmente utilizadas para realizar determinada tarefa, repetidas vezes, com fim a evitar a repetição de um certo bloco de código.
 
 Exemplo: 
@@ -117,10 +122,11 @@ else:
 	print("A área desse retangulo é:", area)
 ```
 
-*LISTA - TUPLAS - CONJUNTOS*: 
+
+#### **LISTA - TUPLAS - CONJUNTOS**: 
 Estrutura de armazenamento de dados.
 
-LISTA:
+##### LISTA:
 Representada por [], a lista é mutável, ordenada, permite elementos duplicados, armazena os elementos em uma única linha ou várias linhas e coluna, pode ser criada usando a função *nome_lista = ['item', 'outro item']*.
 
 ```python 
@@ -128,7 +134,7 @@ comida = ['Feijão', 'Arroz', 'Xuxu', 'Risoto']
 print(comida)
 ```
 
-METODOS DE LISTA:
+##### METODOS DE LISTA:
 
 list.**append**(x) - Adiçiona item a lista;
 list.**remove**(x) - Remove item da lista;
@@ -142,7 +148,7 @@ list.**sort**() - Ordena os itens de uma lista de acordo com a informação pass
 list.**reverse**() - Inverte a ordem da lista;
 list.**copy**() - Faz a cópia rasa da lista.
 
-TUPLA:
+##### TUPLA:
 Representada por (), a tupla é imutável, ordenada, permite elementos duplicados, armazena os elementos em uma única linha ou várias linhas e coluna, pode ser criada usando a função *nome_tupla = ('item', 'outro item')*.
 
 ```python 
@@ -150,7 +156,7 @@ tupla = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 print(tupla)
 ```
 
-CONJUNTO:
+##### CONJUNTO:
 Representado por {}, o conjunto é mutavel, não ordenado, não permite elementos duplicados, armazena os elementos em uma única linha, pode ser criado usando a função *nome_conjunto = {'item', 'outro item'}*.
 
 ```python
