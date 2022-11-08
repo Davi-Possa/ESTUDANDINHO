@@ -173,3 +173,7 @@ print(conjunto)
 ```
 
 *Obs: Caso armazene um item repetido, ele irá retornar o conjunto, mas não irá imprimir tal item.*
+
+|=-=-=-=-=-=-=-=-=-=-=-=|
+
+
