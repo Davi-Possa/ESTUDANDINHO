@@ -3,7 +3,7 @@
     margin: 0px;
 }
 
-a {
+.home, .receita, .config, .insta, .whats {
     text-decoration: none;
     color: #ffffff;
     display: block;
@@ -13,7 +13,7 @@ a {
     margin-top: 20px;
 }
 
-a:hover {
+.home:hover, .receita:hover, .config:hover, .insta:hover, .whats:hover2+ {
     background-color: #ffb120;
     transition: all .1s linear;
 }
@@ -276,4 +276,192 @@ label.treco:hover {
 
 .whats {
     width: 50px;
+}
+
+.recipe-card1{
+    background-color: var(--card-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--global-radius);
+    color: var(--dish-text-color);
+    display: flex;
+    height: 350px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 90px;
+}
+
+.recipe-card1.receita1 {
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-card1 img {
+    border-top-left-radius: var(--global-radius);
+    border-top-right-radius: var(--global-radius);
+    width: 300px;
+}
+
+.recipe-card2{
+    background-color: var(--card-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--global-radius);
+    color: var(--dish-text-color);
+    display: flex;
+    height: 350px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+
+.recipe-card2.receita2 {
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-card2 img {
+    border-top-left-radius: var(--global-radius);
+    border-top-right-radius: var(--global-radius);
+    width: 300px;
+}
+
+.recipe-card3{
+    background-color: var(--card-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--global-radius);
+    color: var(--dish-text-color);
+    display: flex;
+    height: 350px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+
+.recipe-card3.receita3 {
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-card3 img {
+    border-top-left-radius: var(--global-radius);
+    border-top-right-radius: var(--global-radius);
+    width: 300px;
+}
+
+.IMG_PRATO {
+    margin-left: 225px;
+    margin-top: -90px;
+    max-width: 50px;
+    float: left;
+}
+
+.IMG_TEMPO {
+    margin-left: 119px;
+    margin-top: -90px;
+    max-width: 50px;
+    float: left;
+}
+
+:root {
+    --card-bg-color: #fff;
+    --card-text-color: #070705;
+    --dish-type-color: #FFA500;
+    --global-radius: 15px;
+    --card-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.02), 
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 
+    0 12.5px 10px rgba(0, 0, 0, 0.035), 
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.card-meta h2 {
+    margin-top: 25px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.recipe-card1 h2 {
+    margin-top: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.recipe-card2 h2 {
+    margin-top: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.recipe-card3 h2 {
+    margin-top: 15px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.card-meta a {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #070705;
+}
+
+.dish-stats {
+    margin-top: 15px;
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.dish-stats li {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dish-type {
+    background-color: #FFA500;
+    border-radius: 18px;
+    border-color: #FFA500;
+    width: 65px;
+    height: 30px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.tudo {
+    display: flex;
+}
+
+.cuzcuz {
+    height: 0;
+}
+
+.dish-type:hover {
+    background-color: #db8f00;
+    transition: .2s;
+}
+
+.dish-stats li:not(:last-child) {
+    margin-right: 36px;
+}
+
+.dish-stats .dish-type:not(:last-child) {
+    margin-right: 50px;
+}
+
+.dish-stats .recipe-card2 li:not(:last-child) {
+    margin-right: 36px;
+}
+
+.dish-stats .recipe-card2 .dish-type:not(:last-child) {
+    margin-right: 50px;
+}
+
+.dish-stats .recipe-card3 li:not(:last-child) {
+    margin-right: 36px;
+}
+
+.dish-stats .recipe-card3 .dish-type:not(:last-child) {
+    margin-right: 50px;
 }

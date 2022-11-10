@@ -207,6 +207,12 @@ label.treco:hover {
     float: left;
 }
 
+.IMG_TEMPO {
+    margin-left: 119px;
+    margin-top: -90px;
+    max-width: 50px;
+    float: left;
+}
 
 :root {
     --card-bg-color: #fff;
