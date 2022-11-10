@@ -137,7 +137,7 @@ label.treco:hover {
     border-radius: var(--global-radius);
     color: var(--dish-text-color);
     display: flex;
-    height: 300px;
+    height: 350px;
     width: 300px;
     margin-left: 150px;
     margin-top: 90px;
@@ -160,7 +160,7 @@ label.treco:hover {
     border-radius: var(--global-radius);
     color: var(--dish-text-color);
     display: flex;
-    height: 300px;
+    height: 350px;
     width: 300px;
     margin-left: 20px;
     margin-top: 90px;
@@ -183,7 +183,7 @@ label.treco:hover {
     border-radius: var(--global-radius);
     color: var(--dish-text-color);
     display: flex;
-    height: 300px;
+    height: 350px;
     width: 300px;
     margin-left: 20px;
     margin-top: 90px;
@@ -199,6 +199,14 @@ label.treco:hover {
     border-top-right-radius: var(--global-radius);
     width: 300px;
 }
+
+.IMG_PRATO {
+    margin-left: 225px;
+    margin-top: -90px;
+    max-width: 50px;
+    float: left;
+}
+
 
 :root {
     --card-bg-color: #fff;
@@ -220,8 +228,20 @@ label.treco:hover {
     line-height: 35px;
 }
 
+.recipe-card1 h2 {
+    margin-top: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.recipe-card2 h2 {
+    margin-top: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
 .recipe-card3 h2 {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
     line-height: 35px;
 }
@@ -239,6 +259,11 @@ label.treco:hover {
     justify-content: right;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+.dish-stats li {
+    text-align: center;
+    margin-top: 40px;
 }
 
 .dish-type {
