@@ -32,7 +32,7 @@
 }
 
 /* Caixinha onde o botão desliza */
-.switch > .slider {
+.switch > #slider {
   background: #e0e2db;
   border: 0.1rem solid #bbb;
   cursor: pointer;
@@ -46,7 +46,7 @@
 }
 
 /* O botão redondinho */
-.switch > .slider > .button {
+.switch > #slider > #button {
   content: "";
   position: absolute;
   width: 3.2rem;
@@ -61,17 +61,27 @@
 }
 
 /* Slider ON */
-.switch > .hidden-toggle:checked ~ .slider {
+.switch > .hidden-toggle:checked ~ #slider {
   background: #4615b2;
   box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
     0 0 1rem rgba(50, 0, 150, 0.2);
 }
 
 /* Botão ON */
-.switch > .hidden-toggle:checked ~ .slider > .button {
+.switch > .hidden-toggle:checked ~ #slider > #button {
   left: 4.4rem;
   box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   background: #e0e2db;
+}
+
+.dark{
+background:#000;
+color:#fff;
+}
+
+.light{
+background:#fff;
+color:#4b4b4b;
 }
 
 
