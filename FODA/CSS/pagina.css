@@ -1,114 +1,176 @@
+html {
+    --bg: #ffffff;
+    --bg-fundo: #dedede;
+    --bg-bagulhin: #ffffff;
+    --bg-latera: #dedede;
+    --bg-hover: #ffb120;
+    --bg-letra: #000000;
+}
+
 *{
     padding: 0px;
     margin: 0px;
 }
 
+.bagu {
+    display: flex;
+    width: 0px;
+    height: 80px;
+}
+
+#set {
+    display: none;
+    width: 50px;
+}
+
+#set:checked ~ .config-fundo {
+    transform: translateX(540px);
+}
+
+.config-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    margin-left: -500px;
+    margin-top: 20px;
+    transition: all .2s linear;
+}
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 100%;
-  min-height: 100%;
+    width: 150px;
+    height: 70px;
+    margin-top: -20px;
+    border-radius: 15px;
+    background-color: var(--bg);
 }
 
-/* Aqui comença o Toggler On/Off */
 .toggle-wrapper {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-/* Texto que decidi adicionar como exemplo */
 .toggle-wrapper .description {
-  margin-left: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  font-size: 1.4rem;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
 }
 
-/* Esconde o checkbox */
-.switch > .hidden-toggle {
-  display: none;
+.switch > #hidden {
+    display: none;
 }
 
-/* Caixinha onde o botão desliza */
-.switch > #slider {
-  background: #e0e2db;
-  border: 0.1rem solid #bbb;
-  cursor: pointer;
-  border-radius: 2rem;
-  transition: all 300ms ease-in-out;
-  width: 8rem;
-  height: 4rem;
-  position: relative;
-  box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
-    0 0 1rem rgba(0, 0, 0, 0.1);
+#slider {
+    background: #ffffff;
+    border: 0.1rem solid #bbb;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .2s linear;
+    width: 80px;
+    height: 40px;
+    margin-top: 14px;
+    margin-left: 33px;
+    position: relative;
+    box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
-/* O botão redondinho */
-.switch > #slider > #button {
-  content: "";
-  position: absolute;
-  width: 3.2rem;
-  height: 3.2rem;
-  background: #4615b2;
-  top: 0.4rem;
-  left: 0.4rem;
-  transition: all 300ms ease-in-out;
-  border-radius: 50%;
-  z-index: 2;
-  box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+#slider > #button {
+    content: "";
+    background-color: #dbdbdb;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 2px;
+    left: 3px;
+    transition: all .2s linear;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(50, 0, 150, 0.2);
 }
 
-/* Slider ON */
-.switch > .hidden-toggle:checked ~ #slider {
-  background: #4615b2;
-  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
-    0 0 1rem rgba(50, 0, 150, 0.2);
+#sol, #lua {
+    margin-top: 2px;
+    width: 35px;
+    margin-left: 2px;
 }
 
-/* Botão ON */
-.switch > .hidden-toggle:checked ~ #slider > #button {
-  left: 4.4rem;
-  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-  background: #e0e2db;
+.segunda {
+    margin-top: 400px;
 }
 
-.dark{
-background:#000;
-color:#fff;
+.terceira {
+    margin: 400px;
 }
 
-.light{
-background:#fff;
-color:#4b4b4b;
+#lua {
+    width: 33px;
+    margin-top: -2px;
 }
 
+.switch > #hidden:checked ~ #slider {
+    background: var(--bg-fundo);
+    box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(50, 0, 150, 0.2);
+}
 
+.switch > #hidden:checked ~ #slider > #button {
+    left: 40px;
+    background-color: #dbdbdb;
+    box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(50, 0, 150, 0.2);
+}
 
-
+.img-btn {
+    width: 48px;
+}
 
 .home, .receita, .config, .insta, .whats {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    background-color: #c4c2c0;
+    background-color: var(--bg-latera);
     padding: 5px 5px;
     border-radius: 20px;
     margin-top: 20px;
 }
 
-.home:hover, .receita:hover, .config:hover, .insta:hover, .whats:hover2+ {
-    background-color: #ffb120;
+.home:hover, .receita:hover, .config:hover, .insta:hover, .whats:hover {
+    background-color: var(--bg-hover);
     transition: all .1s linear;
 }
 
+.fundo1 {
+    background-color: var(--bg-fundo);
+    height: 900px;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 30px;
+}
+
+.fundo2 {
+    background-color: var(--bg-fundo);
+    height: 1190px;
+    margin-top: -1140px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 30px;
+}
+
+.fundo3 {
+    background-color: var(--bg-fundo);
+    height: 900px;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 30px;
+}
+
 body {
-    background-image: url(../IMG/FUNDO.png);
+    background-color: var(--bg);
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: Arial;
-
 }
 
 .slider {
@@ -255,8 +317,6 @@ body {
     background-color: #FFA500;
 }
 
-
-
 ul {
     list-style: none;
 }
@@ -264,7 +324,7 @@ ul {
 .barra {
     height: 60px;
     background-color: #FFA500;
-    border-bottom: 20px solid #ffffff;
+    border-bottom: 20px solid var(--bg);
 }
 
 label.treco {
@@ -301,7 +361,7 @@ label.treco:hover {
 .faixa {
     background-color: #FFA500;
     height: 60px;
-    width: 20%;
+    width: 30%;
     float: right;
 }
 
@@ -319,12 +379,13 @@ label.treco:hover {
 
 .busca {
     height: 60px;
-    width: 70%;
+    width: 60%;
     float: right;
     background-color: #FFA500;
 }
 
 .bagulhin {
+    background-color: var(--bg-bagulhin);
     width: 300px;
     padding: 6px;
     padding-left: 30px;
@@ -334,8 +395,8 @@ label.treco:hover {
 }
 
 .side {
-    background-color: #ffffff;
-    width: 60px;
+    background-color: var(--bg);
+    width: 0px;
     height: 10%;
     left: -250px;
     position: absolute;
@@ -363,91 +424,45 @@ label.treco:hover {
     width: 50px;
 }
 
-.recipe-card1{
-    background-color: var(--card-bg-color);
+.recipe-card1, .recipe-card2, .recipe-card3 {
+    background-color: var(--bg);
     box-shadow: var(--card-shadow);
     border-radius: var(--global-radius);
     color: var(--dish-text-color);
     display: flex;
     height: 350px;
     width: 300px;
-    margin-left: 150px;
-    margin-top: 90px;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.recipe-card1.receita1 {
+.recipe-card1.receita1, .recipe-card2.receita2, .recipe-card3.receita3 {
     align-items: center;
     justify-content: center;
 }
 
-.recipe-card1 img {
-    border-top-left-radius: var(--global-radius);
-    border-top-right-radius: var(--global-radius);
-    width: 300px;
-}
-
-.recipe-card2{
-    background-color: var(--card-bg-color);
-    box-shadow: var(--card-shadow);
-    border-radius: var(--global-radius);
-    color: var(--dish-text-color);
-    display: flex;
-    height: 350px;
-    width: 300px;
-    margin-left: 20px;
-    margin-top: 90px;
-}
-
-.recipe-card2.receita2 {
-    align-items: center;
-    justify-content: center;
-}
-
-.recipe-card2 img {
-    border-top-left-radius: var(--global-radius);
-    border-top-right-radius: var(--global-radius);
-    width: 300px;
-}
-
-.recipe-card3{
-    background-color: var(--card-bg-color);
-    box-shadow: var(--card-shadow);
-    border-radius: var(--global-radius);
-    color: var(--dish-text-color);
-    display: flex;
-    height: 350px;
-    width: 300px;
-    margin-left: 20px;
-    margin-top: 90px;
-}
-
-.recipe-card3.receita3 {
-    align-items: center;
-    justify-content: center;
-}
-
-.recipe-card3 img {
+.recipe-card1 img, .recipe-card2 img, .recipe-card3 img {
     border-top-left-radius: var(--global-radius);
     border-top-right-radius: var(--global-radius);
     width: 300px;
 }
 
 .IMG_PRATO {
-    margin-left: 225px;
-    margin-top: -90px;
+    margin-left: 227px;
+    margin-top: -70px;
     max-width: 50px;
     float: left;
 }
 
 .IMG_TEMPO {
-    margin-left: 119px;
-    margin-top: -90px;
+    margin-left: 123px;
+    margin-top: -70px;
     max-width: 50px;
     float: left;
 }
 
 :root {
-    --card-bg-color: #fff;
     --card-text-color: #070705;
     --dish-type-color: #FFA500;
     --global-radius: 15px;
@@ -484,14 +499,21 @@ label.treco:hover {
     line-height: 35px;
 }
 
+.segunda .recipe-card3 h2 {
+    margin-top: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
 .card-meta a {
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #070705;
+    color: var(--bg-letra);
 }
 
 .dish-stats {
+
     margin-top: 15px;
     display: flex;
     justify-content: right;
@@ -505,6 +527,7 @@ label.treco:hover {
 }
 
 .dish-type {
+    color: var(--bg-letra);
     background-color: #FFA500;
     border-radius: 18px;
     border-color: #FFA500;
@@ -514,8 +537,13 @@ label.treco:hover {
     cursor: pointer;
 }
 
+.dish-stats li{
+    color: var(--bg-letra);
+}
+
 .tudo {
     display: flex;
+    justify-content: center;
 }
 
 .cuzcuz {
