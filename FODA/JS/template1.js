@@ -1,6 +1,5 @@
 const html = document.querySelector("html")
 const checkbox = document.querySelector("input[name=theme]")
-var sol = document.querySelector("#sol")
 
 const getStyle = (element, style) =>
     window
