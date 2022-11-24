@@ -12,8 +12,20 @@
 {{ meu_novo_paragrafo }}
 
 {% endautoescape %}
+<a href="{{ url_for('pagina_da_copa')}}">Richas na copa</a>
 
-<img src="{{ url_for('static', filename='IMG/JUREMA.png'">
+<br/>
+
+<label for="meu_seletor"> Qual o melhor jogador do Brasil?</label>
+<select id="meu_seletor">
+    <option value="neymar">Neymar jr.</option>
+    <option value="richarlison"> Richarlison</option>
+    <option value="daniel_alves">Daniel alves</option>
+    <option value="vinicius_junior">VINAO</option>
+</select>
+<button id="botao_enviar"> ENVIAR! </button>
+
+<img class="pombozo" src="{{ url_for('static', filename='IMG/POMBO.png')}}">
 
 </body>
 </html>

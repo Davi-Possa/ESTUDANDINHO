@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19276dfa-354f-4fb3-8487-e2c003318cc0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TEMPLATES/template3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template-site.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESTUDANDO.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FODA/TEMPLATES/template-site.py" beforeDir="false" afterPath="$PROJECT_DIR$/FODA/CSS/aula.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FODA/TEMPLATES/template1.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPLATES/template1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FODA/TEMPLATES/template2.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPLATES/template2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FODA/pagina.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPLATES/pagina.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fibo.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPLATES/template4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPLATES/template404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/CSS/aula.css" beforeDir="false" afterPath="$PROJECT_DIR$/FODA/CSS/aula.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/CSS/pagina.css" beforeDir="false" afterPath="$PROJECT_DIR$/FODA/CSS/pagina.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/IMG/FUNDO_D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/IMG/HOME_D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/IMG/LUPA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/IMG/MENU_D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/IMG/RECEITAS_D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FODA/IMG/SETINGS_D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPLATES/template2.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPLATES/template2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPLATES/template3.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPLATES/template3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-site.py" beforeDir="false" afterPath="$PROJECT_DIR$/template-site.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +40,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/aluno/ESTUDANDINHO"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aluno/ESTUDANDINHO&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aluno\ESTUDANDINHO\TEMPLATES" />
