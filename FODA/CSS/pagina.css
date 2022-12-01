@@ -6,53 +6,59 @@ html {
     --bg-hover: #ffb120;
     --bg-letra: #000000;
 }
-
-.cronometro {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: #FFA500;
-    margin-top: -350px;
-    width: 500px;
-    height: 280px;
-    border-radius: 30px;
-    box-shadow: var(--card-shadow);
-}
-
-.cronometro h1 {
-    text-align: center;
-    padding-top: 25px;
-}
-
-.crono {
+  
+  .base-timer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
     align-items: center;
-}
-
-#tempo {
-    font-size: 80px;
-    text-align: center;
-}
-
-.botones {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.iniciar:hover, .parar:hover, .resetar:hover {
-    background-color: #e6e6e6;
-}
-
-.iniciar, .parar, .resetar {
-    background-color: #ffffff;
-    border-radius: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.play, .pause, .reset {
-    width: 50px;
-    padding: 10px;
-}
+    justify-content: center;
+    font-size: 48px;
+  }
 
 *{
     padding: 0px;
