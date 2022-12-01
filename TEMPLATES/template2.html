@@ -59,20 +59,28 @@
             </main>
             
             <div class="fundo3">
+                
+            </div>
+            <section>
                 <div class="cronometro">
                     <h1>CRONÔMETRO</h1>
-                    <div class="crono">
-                        <p class="tempo">
-                            <span class="minutos">00</span>:<span class="segundos">00</span>:<span class="milissegundos">00</span>
-                        </p>
-                        <div class="botones">
-                            <button onclick="iniciar()" class="iniciar"><img class="play" src="../FODA/IMG/PLAY.png"></button>
-                            <button onclick="parar()" class="parar"><img class="pause" src="../FODA/IMG/PAUSE.png"></button>
-                            <button onclick="resetar()" class="resetar"><img class="reset" src="../FODA/IMG/RESET.png"></button>
+                    <div class="row">
+                        <div class="crono">
+                            <p id="tempo">
+                                <span id="horas">01</span>:<span id="minutos">10</span>:<span id="segundos">00</span>
+                            </p>
+                            <div class="botones">
+                                <button onclick="iniciar()" class="iniciar"><img class="play" src="../FODA/IMG/PLAY.png"></button>
+                                <button onclick="parar()" class="parar"><img class="pause" src="../FODA/IMG/PAUSE.png"></button>
+                                <button onclick="resetar()" class="resetar"><img class="reset" src="../FODA/IMG/RESET.png"></button>
+                            </div>
                         </div>
                     </div>
+                    <div id="display">
+                        <h3></h3>
+                    </div>
                 </div>
-            </div>
+            </section>
     <script type="text/javascript" src="../FODA/JS/template2.js"></script>
     </body>
 

@@ -1,66 +1,43 @@
-const miliseg = document.querySelector('.milissegundos')
-const seg = document.querySelector('.segundos')
-const min = document.querySelector('.minutos')
+function startTimer(duration, display) {
 
-let miliNum = 0
-let segNum = 0
-let minNum = 0
-let INTERVALO
+  var timer = duration, horas = 0, minutos = 1, segundos;
+  const tempo = document.getElementById("#tempo");
 
-function milissegundos() {
-    miliNum++
-    if (miliNum < 10) {
-      miliseg.innerHTML = '0' + miliNum
-    } else {
-      miliseg.innerHTML = miliNum
-    }
-  
-    if (miliNum == 99) {
-      miliNum = 0
-      segundos()
-    }
-}
-  
-function segundos() {
-    segNum++
-    if (segNum < 10) {
-        seg.innerHTML = '0' + segNum
-    } else {
-        seg.innerHTML = segNum
-    }
-  
-    if (segNum == 59) {
-        segNum = 0
-        minutos()
-    }
-}
-  
-function minutos() {
-    minNum++
-    if (minNum < 10) {
-      min.innerHTML = '0' + minNum
-    } else {
-      min.innerHTML = minNum
-    }
-}
+  setInterval(function(){
+    horas = parseInt(horas);
+    minutos = parseInt(minutos);
+    segundos = parseInt(timer % 60, 10);
 
-function parar() {
-    clearInterval(INTERVALO)
-}
+    if(segundos == 0 && minutos > 0){
+      minutos = minutos - 1;
+      segundos = 59
+    }
 
-function resetar() {
-    clearInterval(INTERVALO)
-    miliNum = 0
-    segNum = 0
-    minNum = 0
-    miliseg.innerHTML = '00'
-    seg.innerHTML = '00'
-    min.innerHTML = '00'
+    if(minutos == 0 && horas > 0){
+      horas = horas - 1;
+      minutos = 59
+    }
+
+    if(minutos == 0 && segundos == 0 ){
+      alert("Acabou o tempo");
+    }
+
+    horas = horas < 10 ? "0" + horas : horas;
+    minutos = minutos < 10 ? "0" + minutos : minutos;
+    segundos = segundos < 10 ? "0" + segundos : segundos;
+
+    display.textContent = horas + ":" + minutos + ":" + segundos;
+
+    if(--timer < 0) {
+      timer = duration;
+    }
+
+  }, 1000)
 }
 
 function iniciar() {
-  clearInterval(INTERVALO)
-  INTERVALO = setInterval(() => {
-    milissegundos()
-  }, 10)
+  var duration = 60 * 4;
+  var display = document.querySelector("#tempo");
+
+  startTimer(duration, display);
 }
